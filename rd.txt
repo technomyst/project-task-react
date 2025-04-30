@@ -1,0 +1,15 @@
+Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+
+solution
+
+import React from "react"
+import { CSSTransition } from "react-transition-group"
+
+const MyComponent = () => {
+  const nodeRef = React.useRef(null)
+  return (
+    <CSSTransition nodeRef={nodeRef} in timeout={200} classNames="fade">
+      <div ref={nodeRef}>Fade</div>
+    </CSSTransition>
+  )
+}

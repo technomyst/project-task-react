@@ -1,0 +1,28 @@
+.project-container{
+   background-color: whitesmoke;
+   margin: 10px;
+   border-radius: 10px;
+   padding: 10px;
+}
+.project-border
+{
+  /*background-color: blue;*/
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.new-created-project {
+  animation: highligh 5s;
+  }
+  
+  @keyframes highligh {
+    0% {
+      background-color:initial;
+    }
+    20% {
+      background-color:blueviolet;
+    }
+    100% {
+      background-color: initial;
+    }
+  }

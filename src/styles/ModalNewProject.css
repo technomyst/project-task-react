@@ -1,0 +1,81 @@
+.modal-new-project{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.75);
+    overflow:hidden;
+    overflow-y:auto;
+    transition:opacity 0.3s;
+    z-index:999;    
+}
+
+.modal-wrapper {
+    position: absolute;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    min-height:100%;
+}
+.modal-content {
+    position:relative;
+    margin:20px;
+    width:100%;
+    max-width:600px;
+    border-radius:20px;
+    background-color:#ffffff;
+    padding: 40px 20px 20px 20px;
+    transform: translateY(-50px);
+    transition:opacity 0.3s, transform 0.3s;
+}
+.modal-close-button {
+    position:absolute;
+    top: 16px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    /*background-color:transparent; */
+    border: none;
+    background:none;
+    
+
+}
+.button-submit {
+    text-align: center;
+}
+.form-content div {
+    padding: 5px;
+}
+.form-content input {
+    width: 100%;
+}
+
+.form-content textarea{
+    width: 100%;
+}
+
+
+.modal-new-project--entering,
+.modal-new-project--entered {
+    opacity: 1;
+}
+
+.modal-new-project--entering .modal-content,
+.modal-new-project--entered .modal-content {
+    transform: translateY(0);
+}
+
+.modal-new-project--exiting,
+.modal-new-project--exited{
+    opacity: 0;
+}
+
+.modal-new-project--exiting .modal-content,
+.modal-new-project--exited .modal-content {
+    transform: translateY(-50px);
+}
